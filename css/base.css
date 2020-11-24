@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&family=Roboto Mono&family=Lato&family=PT+Sans&display=swap');
+@import url('./bulma.css');
+
+/* @media (prefers-color-scheme: dark) {
+    html, body, .hero .section {
+        background-color: black;
+    }
+
+    .title, .subtitle {
+        color: white !important;
+    }
+
+    .button {
+        box-shadow: none !important;
+    }
+
+    .tile.project-tile {
+        box-shadow: none !important;
+    }
+} */
+
+h1 {
+    font-family: PT Sans;
+}
+
+.hero h1.title {
+    padding-bottom: 1rem;
+    animation: fadeIn-1 1.5s;
+}
+
+.hero .subtitle {
+    line-height: 2rem;
+    animation: fadeIn-2 1.5s;
+}
+
+#hero-buttons {
+    animation: fadeIn-3 1.5s;
+}
+
+.hero .button {
+    margin-bottom: 1rem;
+}
+
+.section .subtitle {
+    line-height: 2rem;
+}
+
+
+.button {
+    font-family: PT Sans;
+    font-weight: bold;
+    transform: translateY(0rem);
+    border: 0rem;
+    background-color: rgb(246, 246, 246);
+    margin-right: 0.5rem;
+
+    box-shadow: 0.2rem 0.2rem 1.5rem 0.05rem lightgrey;
+
+    transition: transform 0.2s, background-color 0.2s, box-shadow 0.1s;
+}
+
+.button.discrete {
+    font-size: 0.8rem;
+}
+
+.circle {
+    border-radius: 10000rem;
+}
+
+.button:hover {
+    border: 0rem;
+    background-color: rgb(218, 218, 218);
+    transform: translateY(-0.2rem);
+    box-shadow: 0.0rem 0.0rem 0rem 0rem lightgrey;
+}
+
+.accent {
+    background-color: rgb(53, 89, 246);
+    color: white;
+}
+
+.text-accent {
+    color: rgb(53, 59, 246);
+}
+
+.button.accent:hover {
+    background-color: rgb(50, 71, 165);
+    color: white;
+}
+
+.tile.project-tile {
+    box-shadow: 0rem 0rem 1rem 0.2rem lightgrey;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+.tile.project-tile .image {
+    margin-right: 2rem;
+}
+
+.tile.project-tile .title {
+    font-family: Lato;
+    font-size: 1.5rem;
+}
+
+.tile.project-tile .subtitle {
+    font-family: Lato;
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+
+a.styled-link {
+    transform: translateY(0rem);
+    font-family: Noto Sans;
+    transition: transform 0.2s;
+    display: inline-block;
+}
+
+a.styled-link:hover {
+    transform: translateY(-0.2rem);
+}
+
+.styled-link.accent {
+    color: rgb(53, 89, 246);
+}
+
+@keyframes fadeIn-1 {
+    0% {
+        opacity: 0;
+        transform: translateY(-1rem);
+    }
+
+    33% {
+        opacity: 1;
+        transform: translateY(0rem);
+    }
+}
+
+@keyframes fadeIn-2 {
+    0% {
+        opacity: 0;
+        transform: translateY(-1rem);
+    }
+
+    33% {
+        opacity: 0;
+        transform: translateY(-1rem);
+    }
+
+    66% {
+        opacity: 1;
+        transform: translateY(0rem);
+    }
+}
+
+@keyframes fadeIn-3 {
+    0% {
+        opacity: 0;
+        transform: translateY(-1rem);
+    }
+
+    66% {
+        opacity: 0;
+        transform: translateY(-1rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0rem);
+    }
+}
