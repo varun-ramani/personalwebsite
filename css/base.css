@@ -25,20 +25,25 @@ h1 {
 
 .hero h1.title {
     padding-bottom: 1rem;
-    animation: fadeIn-1 1.5s;
+    animation: fadeIn-1 1s;
 }
 
 .hero .subtitle {
     line-height: 2rem;
-    animation: fadeIn-2 1.5s;
+    animation: fadeIn-2 1s;
 }
 
 #hero-buttons {
-    animation: fadeIn-3 1.5s;
+    animation: fadeIn-3 1s;
 }
 
 .hero .button {
     margin-bottom: 1rem;
+}
+
+#hero-image-container {
+    justify-content: center;
+    animation: fadeIn-image 1.5s;
 }
 
 .section .subtitle {
@@ -54,7 +59,7 @@ h1 {
     background-color: rgb(246, 246, 246);
     margin-right: 0.5rem;
 
-    box-shadow: 0.2rem 0.2rem 1.5rem 0.05rem lightgrey;
+    box-shadow: 0.35rem 0.35rem 1.5rem 0.05rem lightgrey;
 
     transition: transform 0.2s, background-color 0.2s, box-shadow 0.1s;
 }
@@ -69,9 +74,13 @@ h1 {
 
 .button:hover {
     border: 0rem;
-    background-color: rgb(218, 218, 218);
+    background-color: rgb(230, 230, 230);
     transform: translateY(-0.2rem);
     box-shadow: 0.0rem 0.0rem 0rem 0rem lightgrey;
+}
+
+.button:active {
+    background-color: rgb(200, 200, 200);
 }
 
 .accent {
@@ -91,8 +100,14 @@ h1 {
 .tile.project-tile {
     box-shadow: 0rem 0rem 1rem 0.2rem lightgrey;
     border-radius: 0.5rem;
-    padding: 1rem;
+    padding-top: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
     margin: 1rem;
+}
+
+.tile.project-tile .button {
+    margin-bottom: 1rem;
 }
 
 .tile.project-tile .image {
@@ -110,63 +125,58 @@ h1 {
     line-height: 1.5rem;
 }
 
-a.styled-link {
-    transform: translateY(0rem);
-    font-family: Noto Sans;
-    transition: transform 0.2s;
-    display: inline-block;
-}
-
-a.styled-link:hover {
-    transform: translateY(-0.2rem);
-}
-
-.styled-link.accent {
-    color: rgb(53, 89, 246);
-}
-
 @keyframes fadeIn-1 {
     0% {
         opacity: 0;
-        transform: translateY(-1rem);
+        transform: translateX(-1rem);
     }
 
     33% {
         opacity: 1;
-        transform: translateY(0rem);
+        transform: translateX(0rem);
     }
 }
 
 @keyframes fadeIn-2 {
     0% {
         opacity: 0;
-        transform: translateY(-1rem);
+        transform: translateX(-1rem);
     }
 
     33% {
         opacity: 0;
-        transform: translateY(-1rem);
+        transform: translateX(-1rem);
     }
 
     66% {
         opacity: 1;
-        transform: translateY(0rem);
+        transform: translateX(0rem);
     }
 }
 
 @keyframes fadeIn-3 {
     0% {
         opacity: 0;
-        transform: translateY(-1rem);
+        transform: translateX(-1rem);
     }
 
     66% {
         opacity: 0;
-        transform: translateY(-1rem);
+        transform: translateX(-1rem);
     }
 
     100% {
         opacity: 1;
-        transform: translateY(0rem);
+        transform: translateX(0rem);
+    }
+}
+
+@keyframes fadeIn-image {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
     }
 }
