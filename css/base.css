@@ -43,11 +43,20 @@ h1 {
 
 #hero-image-container {
     justify-content: center;
-    animation: fadeIn-image 1.5s;
+    animation: fadeIn-3 1s;
+}
+
+.section .title {
+    animation: fadeIn-1 1s;
 }
 
 .section .subtitle {
+    animation: fadeIn-2 1s;
     line-height: 2rem;
+}
+
+.section .call-to-action {
+    animation: fadeIn-3 1s;
 }
 
 
@@ -104,6 +113,8 @@ h1 {
     padding-left: 1rem;
     padding-right: 1rem;
     margin: 1rem;
+
+    animation: fadeIn-3 1s;
 }
 
 .tile.project-tile .button {
